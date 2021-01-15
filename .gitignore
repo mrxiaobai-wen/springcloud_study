@@ -26,3 +26,4 @@ hs_err_pid*
 /mvnw
 /springcloud-study.iml
 /eureka-server/.mvn/wrapper/
+/eureka-client/.mvn/
