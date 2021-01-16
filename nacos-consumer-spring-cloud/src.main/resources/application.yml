@@ -1,0 +1,10 @@
+server:
+  port: 8022
+
+spring:
+  application:
+    name: nacos-consumer-spring-cloud
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
