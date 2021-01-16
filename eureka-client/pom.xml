@@ -10,9 +10,9 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.study</groupId>
-  <artifactId>demo</artifactId>
+  <artifactId>erueka-client</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>demo</name>
+  <name>erueka-client</name>
   <description>Demo project for Spring Boot</description>
 
   <properties>
@@ -55,6 +55,10 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+    </dependency>
 
   </dependencies>
 
