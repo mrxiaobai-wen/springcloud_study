@@ -1,0 +1,33 @@
+
+spring:
+  application:
+    name: spring-cloud-geteway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: nacos-server-spring-cloud
+          uri: lb://nacos-server-spring-cloud
+          predicates:
+            - Path=/nacos-server-spring-cloud/**
+          filters:
+            - StripPrefix= 1
+        - id: nnacos-consumer-spring-cloud
+          uri: lb://nacos-consumer-spring-cloud
+          predicates:
+            - Path=/nacos-consumer-spring-cloud/**
+          filters:
+            - StripPrefix= 1
+        - id:  id
+          uri: https://www.cnblogs.com
+          predicates:
+            - Path=/fulong133
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
