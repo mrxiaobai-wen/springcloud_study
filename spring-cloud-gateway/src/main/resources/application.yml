@@ -21,10 +21,6 @@ spring:
             - Path=/nacos-consumer-spring-cloud/**
           filters:
             - StripPrefix= 1
-        - id:  id
-          uri: https://www.cnblogs.com
-          predicates:
-            - Path=/fulong133
 
 management:
   endpoints:
